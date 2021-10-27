@@ -1,0 +1,23 @@
+#Nav-item {
+  display: inline-block;
+  height: 2.6rem;
+  padding-top: 0.4rem;
+  margin-left: 0.25rem;
+  width: 6rem;
+  font-size: 1rem;
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 0.25rem;
+  color: #008282;
+}
+#Nav-item:hover {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#Nav-item:visited {
+  color: #5A2B64;
+}
+.Nav-container {
+  display: flex;
+  flex-direction: row;
+}
