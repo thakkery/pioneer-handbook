@@ -42,8 +42,8 @@ module.exports = {
         // See: https://github.com/LekoArts/gatsby-themes/tree/main/examples/minimal-blog#changing-your-fonts
         web: [
           {
-            name: `IBM Plex Sans`,
-            file: `https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap`,
+            name: `Lato`,
+            file: `https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,700,900&display=swap`,
           },
         ],
       },

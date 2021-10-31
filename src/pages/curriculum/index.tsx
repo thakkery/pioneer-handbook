@@ -1,7 +1,11 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 export default function Curriculum() {
   return (
-    <div>Welcome to the curriculum page. Here are your curriculum options</div>
+    <section>
+      <p>Welcome to the curriculum page. Here are your curriculum options</p>
+      <Link to="/curriculum/html">HTML</Link>
+    </section>
   )
 }

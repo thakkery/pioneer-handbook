@@ -9,11 +9,11 @@ type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 interface ButtonProps {
   text: string
   color: Color
-  shade: Shade
+  shade?: Shade
   size: Size
-  onClick: () => void,
-  disabled: boolean,
-  type: string,
+  onClick?: () => void,
+  disabled?: boolean,
+  type?: string,
 }
 
 function generateBackground(color:Color, shade:Shade) {
