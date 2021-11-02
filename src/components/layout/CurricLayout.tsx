@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import SEO from '@lekoarts/gatsby-theme-minimal-blog/src/components/seo'
 import Navbar from './Navbar'
 
-export default function CurricLayout(props:any):ReactElement {
+export default function CurricLayout(props:any) {
   return (
     <React.Fragment>
       <SEO

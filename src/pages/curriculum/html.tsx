@@ -1,10 +1,10 @@
 import React from 'react'
-import NavLayout from '../../components/NavLayout';
+import CurricLayout from '../../components/layout/CurricLayout';
 
-export default function HtmlCurric(props) {
+export default function HtmlCurric() {
   return (
-    <NavLayout>
+    <CurricLayout>
       <div>This is the HTML curriculum. Where do you want to start?</div>
-    </NavLayout>
+    </CurricLayout>
   );
 }
