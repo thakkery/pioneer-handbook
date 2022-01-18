@@ -4,30 +4,21 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Nowispow`,
-    siteTitleAlt: `Nowispow - Knowledge is Power`,
-    siteHeadline: `Nowispow - The Web Development Guild`,
+    siteTitle: `The Pioneer Handbook`,
+    siteTitleAlt: `The Pioneer Handbook`,
+    siteHeadline: `The Pioneer Handbook - Tools and Techniques for Developing on Cardano`,
     siteUrl: `https://nowispow.com`,
-    siteDescription: `Learn modern web development from beginner to advanced`,
+    siteDescription: `Tools and techniques for blockchain development on Cardano from beginner to advanced`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@nowispow`,
+    author: `@selipso`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
-        navigation: [
-          {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
-        ],
+        navigation: [],
         externalLinks: [],
       },
     },
@@ -52,8 +43,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nowispow - The Web Development Guild`,
-        short_name: `Nowispow`,
+        name: `The Pioneer Handbook - A blockchain developer reference guide`,
+        short_name: `The Pioneer Handbook`,
         description: `Learn modern web development from beginner to advanced`,
         start_url: `/`,
         background_color: `#fff`,
@@ -119,7 +110,7 @@ module.exports = {
               }
             `,
             output: `rss.xml`,
-            title: `Nowispow - @lekoarts/gatsby-theme-minimal-blog`,
+            title: `The Plutus Pioneer Handbook`,
           },
         ],
       },

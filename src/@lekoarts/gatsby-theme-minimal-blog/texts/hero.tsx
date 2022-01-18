@@ -6,11 +6,10 @@ export default function Hero(props) {
   // on top of the doors is Web Development Guild
   return (
     <section style={{ textAlign: 'center' }}>
-      <h1>The Web Development Guild</h1>
-      <br />
-      <br />
-      <Link to="/curriculum">View Curriculum</Link>
-      {/* <Button text="View Curriculum" color="primary" size="xl" /> */}
+      <h1>The Plutus Pioneer Handbook</h1>
+      <p style={{fontSize: '1.1rem'}}>
+        A collection of community resources for getting started with Plutus and Cardano blockchain development. <Link to="/about">Learn what this handbook is about and how you can contribute.</Link>
+      </p>
     </section>
   );
 }

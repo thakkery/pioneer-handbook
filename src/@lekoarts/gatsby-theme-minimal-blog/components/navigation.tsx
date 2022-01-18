@@ -1,6 +1,4 @@
 import "../customstyles.css"
-import React from 'react'
-import { Link } from 'gatsby'
 
 interface NavItem {
   title: string;
@@ -11,15 +9,5 @@ interface NavProps {
 }
 
 export default function Navigation(props:NavProps) {
-  return (
-    <div className="Nav-container">
-      {props.nav.map(({ title, slug }) => (
-        <Link
-          id="Nav-item"
-          key={title}
-          to={slug}
-        >{title}</Link>
-      ))}
-    </div>
-  );
+  return null;
 }

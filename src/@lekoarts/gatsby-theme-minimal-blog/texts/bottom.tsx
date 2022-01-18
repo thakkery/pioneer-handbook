@@ -1,16 +1,46 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
-export default function GetStarted() {
+const Navigation = styled.section`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+
+  & .Navigation-link:first-child {
+    border-radius: 8px 0px 0px 8px;
+  }
+  & .Navigation-link:last-child {
+    border-radius: 0px 8px 8px 0px;
+  }
+  & .Navigation-link {
+    background-color: ivory;
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    height: 4rem;
+    padding-top: 0.8rem;
+  }
+  & .Navigation-link:hover {
+    background-color: turquoise;
+  }
+  & .Navigation-link:active {
+    background-color: #008282;
+  }
+  & .Navigation-link:visited {
+    color: #5A2B64;
+  }
+`
+
+export default function MainBody() {
   return (
     <section style={{ paddingTop: '3rem'}}>
-      <h2>Upskill your Career</h2>
-      <p>Web Development is in extremely high demand. Yet, there's a large gap between learning from a course and the level of expertise required to make a breakthrough product. A guild like Nowispow helps bridge that gap. You won't find quick hacks here. Rather, you might find a pathway to becoming an expert in the field, consistently in high demand and with skills worth a six-figure salary.</p>
-      <br />
-      <h2>Earn More with your new Skills</h2>
-      <p>New skills wouldn't be worth much if they didn't help your career and increase your salary. The content on Nowispow has been curated to fit career paths that demand a salary premium; curators are industry experts with several years of experience, making over six figures in their field. Not only is the content authoritative and practical, the way you consume it is also designed to be engaging.</p>
-      <br />
-      <h2>Co-develop</h2>
-      <p>Building web programs is hard. Teams of developers have to work together cross-functionally, from the interface to the API to the database. As a guild member, you can build your reputation among peers and get new commissions based on your skills. Collaborate with fellow guild members on Github and build something great together. As your reputation grows, you can build clout among other developers and rise up in your profession.</p>
+      <Navigation>
+        <Link className="Navigation-link" to="/guides">Pioneer Guides</Link>
+        <Link className="Navigation-link" to="/recipes">Advanced Recipes</Link>
+      </Navigation>
     </section>
   );
 }
